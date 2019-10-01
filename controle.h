@@ -5,6 +5,7 @@ struct controle
 	int estoque;//controle do armazem
 	char nome[50];//controle do nome do produto
 	float preco;//preco do item
+	int quantidade;
 		
 };typedef struct controle controle;
 
@@ -23,3 +24,11 @@ void setPreco(float preco,controle classe)
 {
 	classe.preco = preco;
 }
+
+float getTotal(controle classe)
+{
+	return classe.quantidade*classe.preco;
+}
+
+
+
