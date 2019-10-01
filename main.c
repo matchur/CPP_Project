@@ -15,6 +15,11 @@ int main(int argc, char** argv)
 		fflush(stdin);
 		gets(str);
 		strcpy(ctrl.nome,str);
+		printf("Informe o preco do item(%s): ",ctrl.nome);
+	   	fflush(stdin);
+		scanf("%f",ctrl.preco);
+		printf("Quantidade no estoque: ");
+		scanf("%d",ctrl.estoque);		
 	}
 	printf("%s",str);
 	return 0;
